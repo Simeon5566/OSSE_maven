@@ -64,6 +64,7 @@ plugin>
 </archive>
 </configuration>
 </plugin>
+
 <!-- für das Praktikum "Integrationstest"-->
 <!--
 plugin>
