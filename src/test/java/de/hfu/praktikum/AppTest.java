@@ -25,7 +25,8 @@ public class AppTest
      } catch( IllegalArgumentException e) {
      }
     }
-    @Test
+    /*
+  
     public void testQeue() {
     	Queue test = new Queue(3);
     	for(int i = 0; i < 3; i++) {
@@ -39,4 +40,6 @@ public class AppTest
     	} catch(IllegalStateException a) {
     	}
     }
+    
+    */
 }
