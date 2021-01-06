@@ -1,20 +1,31 @@
 package de.hfu.praktikum;
+import Queue.Util;
 
-import static org.junit.Assert.assertTrue;
-
+import static org.junit.Assert.*;
 import org.junit.Test;
 
-/**
- * Unit test for simple App.
- */
+
+
 public class AppTest 
 {
-    /**
-     * Rigorous Test :-)
-     */
+    
     @Test
-    public void shouldAnswerWithTrue()
+    public void testIstErstesHalbjahr()
     {
-        assertTrue( true );
+      assertEquals(true, Util.istErstesHalbjahr(7));
+      assertEquals(true, Util.istErstesHalbjahr(1));
+      
+     try {
+    	 Util.istErstesHalbjahr(-1);
+     } catch( IllegalArgumentException e) {
+     }
+     try {
+    	 Util.istErstesHalbjahr(13);
+     } catch( IllegalArgumentException e) {
+     }
+    }
+    @Test
+    public void testQeue() {
+    	
     }
 }

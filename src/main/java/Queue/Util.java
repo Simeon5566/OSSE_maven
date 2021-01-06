@@ -1,4 +1,4 @@
-package de.hfu;
+package Queue;
 
 public class Util {
 
