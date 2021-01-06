@@ -1,5 +1,6 @@
 package de.hfu.praktikum;
 import Queue.Util;
+import Queue.Queue;
 
 import static org.junit.Assert.*;
 import org.junit.Test;
@@ -26,6 +27,16 @@ public class AppTest
     }
     @Test
     public void testQeue() {
-    	
+    	Queue test = new Queue(3);
+    	for(int i = 0; i < 3; i++) {
+    		test.enqueue(i);
+    	}
+    	try {
+    		test.enqueue(10);
+    		for(int i = 0; i < 5; i++) {
+    			test.dequeue();
+    		}
+    	} catch(IllegalStateException a) {
+    	}
     }
 }
